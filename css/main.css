@@ -25,6 +25,29 @@ h3 {
   margin: 0 0 1em 0;
 }
 
+
+
+/**********************************
+PAGE: HOME
+**********************************/
+
+h1 {
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+#banner {
+  height: 80vh;
+}
+
+#banner-bg {
+  height: 80%;
+}
+
 /**********************************
 HEADING
 **********************************/
@@ -47,6 +70,7 @@ h1 {
   font-size: 1.75em;
   font-weight: normal;
   line-height: 0.8em;
+  text-align: center;
 }
 
 h2 {
@@ -182,7 +206,9 @@ body {
 
 /* green header */
 header {
-  background: #6ab47b;
+  top-margin: 0;
+//  background: #6ab47b;
+  background: #fff;
   border-color: #599a68;
 }
 
@@ -192,10 +218,13 @@ nav {
 }
 
 /* logo text */
-h1, h2 {
+h1 {
   color: #fff;
 }
 
+h2 {
+  color: blue;
+}
 
 
 /* nav visisted */
@@ -208,4 +237,10 @@ nav a.selected, nav a:hover {
   color: #32673f;
 }
 
+
+/* Banner */
+#banner-bg {
+  background-image: linear-gradient(white, blue);
+//  background-color: blue;
+}
 
