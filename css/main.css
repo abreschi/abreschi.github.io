@@ -19,7 +19,7 @@ body {
 }
 
 #wrapper {
-  max-width: 940px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 5%;
 }
@@ -58,7 +58,7 @@ h2 {
 }
 
 #banner {
-  padding-top: 3rem;
+  padding-top: 3em;
   min-height: 80vh;
 }
 
@@ -122,40 +122,49 @@ h2 {
  NAVIGATION
 **********************************/
 
-nav {
+.topnav {
   position: fixed;
   z-index: 9;
   width: 100%;
-  height: 3rem;
+  min-height: 3em;
   text-align: center;
   padding: 10px 0;
   margin: 0;
   background: rgba(255, 255, 255, .6);
 }
 
-nav ul {
-  margin: 0 10px;
+.topnav ul {
+  margin: 0;
   padding: 0;
 }
 
-nav li {
-  display: inline-block;
+
+.topnav li {
+  margin: 0 0.5em;
+  float: right;
 }
 
+.topnav li.icon {
+  display: none;
+}
 
-nav a {
+.topnav li:first-child {
+  float: left;
+}
+
+.topnav a {
   font-weight: 800;
   padding: 10px 10px;
   color: grey;
 }
 
 /* nav visisted */
-nav a:visited {
+.topnav a:visited {
   color: #00cea6;
 }
 
 /* selected nav link */
-nav a.selected, nav a:hover {
+.topnav a.selected, .topnav a:hover {
   color: #009B7D;
 }
 
