@@ -94,9 +94,9 @@ PAGE: RESUME
 }
 
 .page-title-bg {
-//  background-image: radial-gradient(center, black, grey, transparent 90%),
-//	url('../img/resume-laptop.jpg');
-  background-image: linear-gradient(black, grey);
+  background-image: radial-gradient(grey, white, transparent 10%), 
+	url('../img/resume-laptop.jpg');
+  height: 30vh;
 }
 
 /**********************************
