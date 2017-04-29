@@ -90,13 +90,38 @@ PAGE: RESUME
 **********************************/
 
 .page-title {
+  position: relative;
   padding-top: 3em;
 }
 
-.page-title-bg {
-  background-image: radial-gradient(grey, white, transparent 10%), 
+#resume-title-bg {
+  background-image: linear-gradient(to right, black, transparent 150%), 
 	url('../img/resume-laptop.jpg');
+}
+
+.page-title-bg {
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
   height: 30vh;
+  padding-left: 1em;
+}
+
+.page-title-bg h1 {
+  position: absolute;
+  top: 50%;
+}
+
+#resume-pdf {
+  display: table;
+  margin: 1em;
+  border: 5px solid grey;
+  padding: 0.5em;
+}
+
+#resume-pdf:hover {
+  color: #009B7D;
+  border-color: #009B7D;
 }
 
 /**********************************
