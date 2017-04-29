@@ -29,6 +29,10 @@ a {
   color: grey;
 }
 
+a:hover {
+  color: #009B7D;
+}
+
 img {
   max-width: 100%;
 }
@@ -110,18 +114,44 @@ PAGE: RESUME
 .page-title-bg h1 {
   position: absolute;
   top: 50%;
+  font-size: 10vh;
 }
 
 #resume-pdf {
   display: table;
-  margin: 1em;
-  border: 5px solid grey;
+  margin: 1em 0;
+  border: 2px solid grey;
   padding: 0.5em;
 }
 
 #resume-pdf:hover {
   color: #009B7D;
   border-color: #009B7D;
+}
+
+#resume-wrapper {
+  margin: 1em;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 1em;
+}
+
+.resume-section-title .fa {
+  padding-left: 3em;
+}
+
+#resume-wrapper ul,p {
+  margin: 0;
+  padding: 0;
+}
+
+/**********************************
+PAGE: PROJECTS
+**********************************/
+
+#project-title-bg {
+  background-image: linear-gradient(to right, black, transparent 150%), 
+	url('../img/dna-strand-blue.crop1.5ratio.jpg');
 }
 
 /**********************************
