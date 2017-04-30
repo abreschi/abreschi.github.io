@@ -1,0 +1,90 @@
+
+/**********************************
+PAGE: RESUME
+**********************************/
+
+.page-title {
+  position: relative;
+  padding-top: 3em;
+}
+
+#resume-title-bg {
+  background-image: linear-gradient(to right, rgba(0,0,0,.7), transparent 200%),
+	  url('../img/resume-laptop.jpg');
+}
+
+.page-title-bg {
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  height: 30vh;
+  padding-left: 1em;
+}
+
+.page-title-bg h1 {
+  position: absolute;
+  top: 50%;
+  font-size: 10vh;
+}
+
+#resume-pdf {
+  display: table;
+  margin: 1em 0;
+  margin-bottom: 2em;
+  border: 2px solid grey;
+  padding: 0.5em;
+}
+
+#resume-pdf:hover {
+  color: #009B7D;
+  border-color: #009B7D;
+}
+
+#resume-wrapper {
+  margin: 1em;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 1em;
+}
+
+#resume-wrapper ul,p {
+  margin: 0;
+  padding: 0;
+}
+
+#resume-wrapper section li {
+  margin-bottom: 2em;
+}
+
+.resume-toggle {
+  display: none;
+  visibility: hidden;
+}
+
+.resume-section-title h3::before {
+  content: "+";
+  font-family: FontAwesome;
+  content: "\f0da";
+  margin-right: 1em;
+}
+
+.resume-section-title:hover {
+  color: #009B7D;
+}
+
+.resume-section-body {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+.resume-toggle:checked ~ .resume-section-body {
+  height: auto;
+}
+
+.resume-toggle:checked ~ .resume-section-title h3::before {
+  font-family: FontAwesome;
+  content: "\f0d7";
+}
+
+
