@@ -1,6 +1,7 @@
 @media screen and (max-width: 600px) {
   .topnav li {
     margin: 0 10px;
+    margin-bottom: 0.5em;
   }
   .topnav li:not(:first-child) {
     display: none;
