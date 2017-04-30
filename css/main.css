@@ -99,8 +99,8 @@ PAGE: RESUME
 }
 
 #resume-title-bg {
-  background-image: linear-gradient(to right, black, transparent 150%), 
-	url('../img/resume-laptop.jpg');
+  background-image: linear-gradient(to right, rgba(0,0,0,.7), transparent 200%),
+	  url('../img/resume-laptop.jpg');
 }
 
 .page-title-bg {
@@ -120,6 +120,7 @@ PAGE: RESUME
 #resume-pdf {
   display: table;
   margin: 1em 0;
+  margin-bottom: 2em;
   border: 2px solid grey;
   padding: 0.5em;
 }
@@ -136,22 +137,54 @@ PAGE: RESUME
   padding: 0 1em;
 }
 
-.resume-section-title .fa {
-  padding-left: 3em;
-}
-
 #resume-wrapper ul,p {
   margin: 0;
   padding: 0;
 }
+
+#resume-wrapper section li {
+  margin-bottom: 2em;
+}
+
+.resume-toggle {
+  display: none;
+  visibility: hidden;
+}
+
+.resume-section-title h3::before {
+  content: "+";
+  font-family: FontAwesome;
+  content: "\f0da";
+  margin-right: 1em;
+}
+
+.resume-section-title:hover {
+  color: #009B7D;
+}
+
+.resume-section-body {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+.resume-toggle:checked ~ .resume-section-body {
+  height: auto;
+}
+
+.resume-toggle:checked ~ .resume-section-title h3::before {
+  font-family: FontAwesome;
+  content: "\f0d7";
+}
+
 
 /**********************************
 PAGE: PROJECTS
 **********************************/
 
 #project-title-bg {
-  background-image: linear-gradient(to right, black, transparent 150%), 
-	url('../img/dna-strand-blue.crop1.5ratio.jpg');
+  background-image: linear-gradient(to right, rgba(0,0,0,.7), transparent 200%),
+	  url('../img/dna-strand-blue.crop1.5ratio.jpg');
 }
 
 /**********************************
