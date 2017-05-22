@@ -1,3 +1,8 @@
+/******************
+  NAVIGATION BAR 
+*******************/
+
+// Responsive navbar
 $("nav .icon").click(function() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -7,5 +12,11 @@ $("nav .icon").click(function() {
   }
 });
 
-
+// Add the class selected to the navbar item of the current page
 var $navli = $("nav li");
+$navli.children().each( function() {
+	$(this).removeClass("selected");
+	if ($(this).prop("href") === window.location.href) {
+		$(this).addClass("selected");
+	};
+});
