@@ -13,31 +13,15 @@
   </head>
   <body>
     <header class="clearfix">
-      <a href="index.html" id="logo" style="display: none;">
-        <h1>Alessandra Breschi</h1>
-        <h2>Bioinformatics Scientist</h2>
-      </a>
       <nav class="topnav" id="myTopnav" class="clearfix">
         <ul>
           <li><a href="index.html" class="selected" id="link-home">Home</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li class="icon"><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-navicon"></i></a></li>
-<!--          <li class="icon"><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li> -->
+          <li class="icon"><a href="javascript:void(0);"><i class="fa fa-navicon"></i></a></li>
         </ul>
       </nav>
-
-    <script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
-    </script>
 
     <div id="banner">
       <div id="banner-bg">
@@ -121,4 +105,7 @@
       </footer>
     </div>
   </body>
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/script.js"></script>
 </html>
