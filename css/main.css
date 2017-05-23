@@ -14,8 +14,13 @@ box-sizing: border-box;
 
 
 body {
+  position: relative;
+  min-height: 100vh;
   font-family: "Quicksand", sans-serif;
   margin-top: 0;
+  background-color: #fff;
+  color: #999;
+  padding-bottom: 5em;
 }
 
 #wrapper {
@@ -212,11 +217,23 @@ FOOTER
 **********************************/
 
 footer {
+  height: 5em;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
   font-size: 0.75em;
   text-align: center;
   clear: both;
-  padding-top: 50px;
+  padding: 1rem;
   color: #ccc;
+  background: #eee;
+}
+
+footer p {
+  margin: 0;
+  padding-top: 10px;
+  color: #009B7D;
 }
 
 .social-icons {
@@ -313,11 +330,6 @@ PAGE: CONTACT
 COLORS
 **********************************/
 
-/* Site body */
-body {
-  background-color: #fff;
-  color: #999;
-}
 
 /* green header */
 header {
