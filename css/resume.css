@@ -28,9 +28,7 @@ PAGE: RESUME
 
 #resume-wrapper {
   margin: 1em;
-  width: 100%;
   max-width: 1000px;
-  padding: 0 1em;
 }
 
 #resume-wrapper ul,p {
