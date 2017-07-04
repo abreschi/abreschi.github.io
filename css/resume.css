@@ -37,7 +37,7 @@ PAGE: RESUME
 }
 
 #resume-wrapper section li {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .resume-toggle {
@@ -96,3 +96,7 @@ SKILLS
   height: 100%;
 }
 
+#Skills ul label {
+  display: inline-block;
+  min-width: 8rem;
+}
