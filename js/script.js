@@ -28,7 +28,8 @@ $navli.children().each( function() {
 // List of skills with labels and scores
 var skills = {
   html : {"label": "HTML & CSS", "score": 0.8},
-  js : {"label": "JavaScript", "score": 0.3},
+  js : {"label": "JavaScript", "score": 0.4},
+  git : {"label": "git", "score": 0.3},
 };
 
 // Iterate over skills and add bars
