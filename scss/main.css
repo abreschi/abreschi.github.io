@@ -1,0 +1,345 @@
+/**********************************
+GENERAL
+**********************************/
+
+* {
+box-sizing: border-box;
+}
+
+.clearfix::after { 
+   content: "";
+   display: table; 
+   clear: both;
+}
+
+
+body {
+  position: relative;
+  min-height: 100vh;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 0;
+  background-color: #fff;
+  color: #999;
+  padding-bottom: 5em;
+}
+
+#wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+a:hover {
+  color: #009B7D;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+h3 {
+  margin: 0 0 1em 0;
+}
+
+
+
+/**********************************
+PAGE: HOME
+**********************************/
+
+h1 {
+  padding-bottom: 0.5rem;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+//  padding-top: 0.5rem;
+  color: #009B7D;
+}
+
+#banner {
+  padding-top: 3em;
+  max-height: 100vh;
+}
+
+#banner-bg {
+  min-height: 80%;
+  background-color: blue;
+  background-image: radial-gradient(#34e89e, #0f3443);
+}
+
+
+#profile-pic {
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  top: 50%;
+  width: 60%;
+  max-width: 500px;
+}
+
+#profile-pic img {
+  border-radius: 100%;
+  border: 100px;
+  border-color: black;
+}
+
+
+/**********************************
+PAGE: CONTENTS
+**********************************/
+
+.page-title {
+  position: relative;
+  padding-top: 3em;
+}
+
+.page-title-bg {
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  height: 30vh;
+  padding-left: 1em;
+}
+
+.page-title-bg h1 {
+  position: absolute;
+  top: 50%;
+  font-size: 10vh;
+}
+
+
+/**********************************
+PAGE: PROJECTS
+**********************************/
+
+#project-title-bg {
+  background-image: linear-gradient(to right, rgba(0,0,0,.7), transparent 200%),
+	  url('../img/dna-strand-blue.crop1.5ratio.jpg');
+}
+
+/**********************************
+HEADING
+**********************************/
+
+header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#logo {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Indie Flower", sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: bold; 
+  line-height: 1em;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Indie Flower", sans-serif;
+  font-size: 1.5em;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+
+
+/**********************************
+ NAVIGATION
+**********************************/
+
+.topnav {
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  min-height: 3em;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+  background: rgba(255, 255, 255, .6);
+}
+
+.topnav ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+.topnav li {
+  margin: 0 0.5em;
+  float: right;
+}
+
+
+.topnav li.icon {
+  display: none;
+}
+
+.topnav li:first-child {
+  float: left;
+}
+
+.topnav a {
+  font-weight: 800;
+  padding: 10px 10px;
+}
+
+/* nav visisted */
+.topnav a:visited {
+  color: #00cea6;
+}
+
+/* selected nav link */
+.topnav a.selected, .topnav a:hover {
+  color: #009B7D;
+}
+
+
+/**********************************
+FOOTER
+**********************************/
+
+footer {
+  height: 5em;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding: 1rem;
+  color: #ccc;
+  background: #eee;
+}
+
+footer p {
+  margin: 0;
+  padding-top: 10px;
+  color: #009B7D;
+}
+
+.social-icons {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+/**********************************
+PAGE HOME
+**********************************/
+
+#gallery {
+  margin: 0;
+  margin-top: 50px;
+  max-width: 1100px;
+  padding: 0;
+}
+
+#gallery li {
+  width: 95%;
+  margin: 2.5%;
+  margin-bottom: 3em;
+}
+
+#gallery .figure {
+  position: relative;
+}
+
+/* Remove gap between anchor and img */
+#gallery img {
+  vertical-align: bottom;
+}
+
+/* Box within each figure */
+#gallery .figure p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid white;
+  padding: 0.25em 0.25em;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 1.25rem;
+  color: black;
+}
+
+#gallery .figure p:hover {
+  color: #009B7D;
+  border-color: #009B7D;
+}
+
+/* Figure caption */
+#gallery .caption p {
+  margin: 0;
+  font-size: 1rem;
+  padding: 0.5em 0.5em;
+  text-align: center;
+}
+
+/**********************************
+PAGE: ABOUT
+**********************************/
+.profile-photo {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
+}
+
+
+/**********************************
+PAGE: CONTACT
+**********************************/
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info li {
+  margin: 12px 0;
+}
+
+.contact-info .fa{
+  margin-right: 1em;
+}
+
+
+/**********************************
+COLORS
+**********************************/
+
+
+/* green header */
+header {
+  top-margin: 0;
+  background: #fff;
+  border-color: #599a68;
+}
+
+
+
+
+
+
