@@ -69,29 +69,43 @@ h2 {
 
 #banner {
   padding-top: 3em;
-  max-height: 100vh;
+  height: 100vh;
 }
 
 #banner-bg {
-  min-height: 80%;
+//  min-height: 80%;
+  position: relative;
+  height: 75vh;
+  margin-bottom: 10px;
   background-color: blue;
-  background-image: radial-gradient(#34e89e, #0f3443);
+//  background-image: radial-gradient(#34e89e, #0f3443);
+  background-image: url('../img/beach-laptop.jpg');
+  background-size: cover;
+  background-position: bottom center;
 }
 
 
-#profile-pic {
+#banner-bg h1 {
+  display: block;
   margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+#profile-pic {
+//  visibility: hidden;
+  margin: 0;
   padding: 20px;
-  position: relative;
-  top: 50%;
+  padding-bottom: 10px;
   width: 60%;
-  max-width: 500px;
+  max-width: 300px;
+  transform: translateY(50%);
 }
 
 #profile-pic img {
   border-radius: 100%;
-  border: 100px;
-  border-color: black;
+  border: 20px solid white;
 }
 
 

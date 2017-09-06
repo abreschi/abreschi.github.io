@@ -1,0 +1,31 @@
+// Normalize styles
+@import "normalize";
+
+// Import variables
+@import "variables";
+
+// Basic rults
+@import "base";
+
+// Rules for navigation bar
+@import "navbar";
+
+// Rules for footer
+@import "footer";
+
+// Rules for index.html
+@import "index";
+
+// Rules for all pages
+@import "pages";
+
+// Rules for projects page
+@import "projects";
+
+// Rules for resume page
+@import "resume";
+
+// Rules for contacts page
+@import "contacts";
+
+

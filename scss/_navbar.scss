@@ -1,0 +1,51 @@
+/**********************************
+ NAVIGATION
+**********************************/
+
+.topnav {
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  min-height: 3em;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+  background: rgba(255, 255, 255, .6);
+}
+
+.topnav ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+.topnav li {
+  margin: 0 0.5em;
+  float: right;
+}
+
+
+.topnav li.icon {
+  display: none;
+}
+
+.topnav li:first-child {
+  float: left;
+}
+
+.topnav a {
+  font-weight: 800;
+  padding: 10px 10px;
+}
+
+/* nav visisted */
+.topnav a:visited {
+  color: #00cea6;
+}
+
+/* selected nav link */
+.topnav a.selected, .topnav a:hover {
+  color: #009B7D;
+}
+
+

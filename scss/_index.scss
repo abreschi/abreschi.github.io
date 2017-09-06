@@ -1,0 +1,118 @@
+/*********************
+HOME PAGE
+*********************/
+
+#index-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+#banner {
+  padding-top: 3em;
+  max-height: 100vh;
+}
+
+#banner-bg {
+  min-height: 80%;
+  background-color: blue;
+  background-image: radial-gradient(#34e89e, #0f3443);
+}
+
+#profile-pic {
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  top: 50%;
+  width: 60%;
+  max-width: 500px;
+}  
+
+#profile-pic img {
+  border-radius: 100%;
+  border: 100px;
+  border-color: black;
+}
+
+
+#gallery {
+  margin: 0;
+  margin-top: 50px;
+  max-width: 1100px;
+  padding: 0;
+}
+
+/* Remove gap between anchor and img */
+#gallery img {
+  vertical-align: bottom;
+}
+
+#gallery li {
+  width: 95%;
+  margin: 2.5%;
+  margin-bottom: 3em;
+  @media #{$brk-wide} {
+    max-width: 30%;
+    margin: 2.5% 1%;
+    clear: both;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media #{$brk-narrow} {
+  #gallery li:nth-child(4n) {
+    clear: left;
+  }
+}
+
+#gallery .figure {
+  position: relative;
+  @media #{$brk-narrow} {
+    max-width: 50%;
+    float: left;
+  }
+  @media #{$brk-wide} {
+    max-width: 100%;
+    clear: both;
+    display: block;
+  }
+}
+
+
+/* Box within each figure */
+#gallery .figure p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid white;
+  padding: 0.25em 0.25em;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 1.25rem;
+  color: black;
+}
+
+#gallery .figure p:hover {
+  color: $lightgreen;
+  border-color: $lightgreen;
+}
+
+/* Figure caption */
+#gallery .caption {
+  @media #{$brk-narrow} {
+    max-width: 45%;
+    float: right;
+  }
+  @media #{$brk-wide} {
+    max-width: 100%;
+  }
+}
+
+#gallery .caption p {
+  margin: 0;
+  font-size: 1rem;
+  padding: 0.5em 0.5em;
+  text-align: center;
+}
